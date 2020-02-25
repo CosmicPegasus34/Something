@@ -1,65 +1,64 @@
-const td = document.querySelector('td');
+//declare global variables
+const td = document.querySelectorAll('td');
 const chip = document.querySelector('.chip');
 const inner = document.querySelector('.inner');
-const introMSG = document.querySelector('.intro');
+const introMsg = document.querySelector('.intro');
+//add listeners to every cell
+for(let i = 0; i < td.length; i++) {
+	//listener responsible for moving chip over column then darken column
+	td[i].addEventListener('mouseover', selectColumn);
+	//listener responsible for dropping chip
+	td[i].addEventListener('click', dropChip);
+	//listener responsible for checking for win
+	td[i].addEventListener('animationend', checkBoard);
 
-/* Listeners for the Table Cells */
-for(let i=0; i < td.length; i++)
-{
-    //Listener responsible for moving chip over column
-    td[i].addEventListener('mouseover', selectColumn)
-    //Listener responsible for dropping chip
-    td[i].addEventListener('click', dropChip);
-    //Listener responsible for checking for win
-    td[i].addEventListener('animationend', checkBoard);
-
-    td[i].addEventListener('mouseover', pullOutIntro);
+	td[i].addEventListener('mouseover', pullOutIntro);
 }
-//Declare selectColumn function
-function selectColumn()
-{
-    displayChipAtTop(this);
-    //Grabs the current column and store it in a variable
-    let currentCol = this.className;
-    //Sorts through and grabs each td in the current column
-    for(let i=0; i<td.length; i++)
-    {
-        if(td[i].classList.contains(currentCol))
-        {
-            td[i].style.backgroundColor = 'darkgray';
-        }
-        else
-        {
-            td[i].style.backgroundColor = 'black';
-        }
-    }
-    //Declares displayChipAtTop function
-    function displayChipAtTop(cell) {
-        //Switches position at given column
-        switch(cell.className) {
-            case 'column-1':
-                chip.style.left = '328px';
-                break;
-            case 'column-2':
-                chip.style.left= '425px';
-                break;
-            case 'column-3':
-                chip.style.left= '524px';
-                break;
-            case 'column-4':
-                chip.style.left= '627px';
-                break;
-            case 'column-5':
-                chip.style.left= '728px';
-                break;
-            case 'column-6':
-                chip.style.left= '826px';
-                break;
-            case 'column-7':
-                chip.style.left= '928px';
-                break;
-        }
-    }
+//declare selectColumn function
+function selectColumn() {
+	//call function to position chip over column
+	displayChipAtTop(this);
+	//grab current column and store it in variable
+	let currentCol = this.className;
+	//sort through and grab each td element with the chosen column
+	for(let i = 0; i < td.length; i++) {
+		//if that element is in the chosen column darken background
+		if(td[i].classList.contains(currentCol)) {
+			td[i].style.backgroundColor = 'darkgrey';
+		} 
+		//else if the cell isn't in the column make sure to switch it back to white
+		else {
+			td[i].style.backgroundColor = 'white';
+		}
+	}
+	//declare displayChipAtTop function
+	function displayChipAtTop(cell) {
+		//switch position given column
+		switch(cell.className) {
+			case 'column-1':
+				chip.style.left = '328px';
+				break;
+			case 'column-2':
+				chip.style.left = '425px';
+				break;
+			case 'column-3':
+				chip.style.left = '524px';
+				break;
+			case 'column-4':
+				chip.style.left = '627px';
+				break;
+			case 'column-5':
+				chip.style.left = '728px';
+				break;				
+			case 'column-6':
+				chip.style.left = '826px';
+				break;
+			case 'column-7':
+				chip.style.left = '928px';
+				break;		
+		}
+	}
+
 }
 //declare dropChip function
 function dropChip() {
@@ -199,12 +198,6 @@ function checkBoard() {
 	}
 	//delcare gameOver function
 	function gameOver(winner, chip1, chip2, chip3, chip4) {
-		//animate the winning chips
-		animateChip(chip1);
-		animateChip(chip2);
-		animateChip(chip3);
-		animateChip(chip4);
-		display(winner);
 		//declare animate function
 		function animateChip(chip) {
 			// grab chip from chip position
@@ -246,6 +239,16 @@ function checkBoard() {
 }
 
 function pullOutIntro() {
-	introMsg.style.left = '65px';
-	introMsg.style.animationName = 'fadeOut';
+    introMsg.style.left = '65px';
+    for(i=0; i<=4; i++)
+    {
+        if(i=0; i<=4; i++)
+        {
+            alert("Red Wins");
+        }
+        else
+        {
+            alert("Yellow Wins");
+        }
+    } 
 }
