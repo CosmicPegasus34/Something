@@ -37,25 +37,25 @@ function selectColumn()
     function displayChipAtTop(cell) {
         //Switches position at given column
         switch(cell.className) {
-            case: 'column-1':
+            case 'column-1':
                 chip.style.left = '328px';
                 break;
-            case: 'column-2':
+            case 'column-2':
                 chip.style.left= '425px';
                 break;
-            case: 'column-3':
+            case 'column-3':
                 chip.style.left= '524px';
                 break;
-            case: 'column-4':
+            case 'column-4':
                 chip.style.left= '627px';
                 break;
-            case: 'column-5':
+            case 'column-5':
                 chip.style.left= '728px';
                 break;
-            case: 'column-6':
+            case 'column-6':
                 chip.style.left= '826px';
                 break;
-            case: 'column-7':
+            case 'column-7':
                 chip.style.left= '928px';
                 break;
         }
