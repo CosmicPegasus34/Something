@@ -25,7 +25,10 @@ td {
     border-collapse: collapse;
     border-radius: 100%;
 }
+<<<<<<< Updated upstream
 */
+=======
+>>>>>>> Stashed changes
 /*Connect 4 Game*/
 * {
 	box-sizing: border-box;
@@ -34,10 +37,13 @@ td {
 	left: -265px;
 	animation-duration: 2.5s;
 }
+<<<<<<< Updated upstream
 body {
 	background-color: darkgrey;
 	transition: all 6s ease;
 }
+=======
+>>>>>>> Stashed changes
 
 @keyframes fadeOut {
 	0% {opacity: 1.0;}
@@ -46,7 +52,11 @@ body {
 
 .intro {
 	position: absolute;
+<<<<<<< Updated upstream
 	transition: all 0.7s ease;
+=======
+	transition: all .7s ease;
+>>>>>>> Stashed changes
 	left: -265px;
 	top: 90px;
 	animation-duration: 2.3s;
@@ -147,7 +157,11 @@ table {
 
 td {
 	text-align: center;
+<<<<<<< Updated upstream
 	transition: all 0.5s ease;
+=======
+	transition: all 5.5s ease;
+>>>>>>> Stashed changes
 	width: 100px;
 	height: 100px;
 	background-color: blue;
@@ -186,6 +200,13 @@ td {
 	to {background-color: black;}
 }
 
+<<<<<<< Updated upstream
+=======
+@keyframes innerWinner {
+	from {background-color: gold;}
+	to {background-color: limegreen;}
+}
+>>>>>>> Stashed changes
 
 .game-over {
 	position: absolute;
@@ -194,4 +215,8 @@ td {
 	font-size: 5rem;
 	transition: all 2s ease;
 
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
