@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-table {
-    width: 800px;
-    height: 650px;
-    border: 2px solid black;
-=======
 @font-face{
     font-family: 'arcade';
     src: url("../Fonts/zig_____.ttf");
@@ -22,7 +16,6 @@ table{
     height: 650px;
     border: black 2px solid;
     background-color: black;
->>>>>>> Stashed changes
 }
 td {
     border-radius: 100px;
