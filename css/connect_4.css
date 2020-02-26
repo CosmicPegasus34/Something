@@ -3,7 +3,8 @@
     src: url("../Fonts/zig_____.ttf");
 }
 html {
-    background-color: silver;
+	background-color: silver;
+	height: 90%
 }
 h1 {
     text-align: center;
@@ -27,4 +28,17 @@ td {
 }
 td:hover{
 	filter: brightness(50%);
+}
+td:hover::after,
+.col:hover::after {
+	content: "";
+	position: absolute;
+	background-color: grey;
+	left: 0;
+	top: 100px;
+	height: 545px;
+	width: 100%;
+	z-index: -1;
+	opacity: 50%;
+	border-radius: 5%;
 }

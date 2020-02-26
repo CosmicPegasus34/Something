@@ -1,22 +1,20 @@
-var board = [
-	['_', '_', '_', '_', '_', '_', '_'],
-	['_', '_', '_', '_', '_', '_', '_'],
-	['_', '_', '_', '_', '_', '_', '_'],
-	['_', '_', '_', '_', '_', '_', '_'],
-	['_', '_', '_', '_', '_', '_', '_']
+var spaces = [
+	[1, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0]
 ]
-var a = true;
-var b = false;
-function color()
-{
-	for(i = 0; i < row.length; i++) {
-		if(a = a) 
-		{
-			document.getElementById("color").style.backgroundColor = "red";
-		}
-		if(b = b)
-		{
-			document.getElementById("color").style.backgroundColor = "yellow";
+function down(event){
+	var pressed = event.key;
+	if(pressed == "s"){
+		spaces[0][0] = 0;
+		spaces[0][1] = 1;
+		for(var x=0; x<8; x++){
+			for(var y=0;y<7;y++){
+				console.log(spaces[x][y])
+			}
 		}
 	}
 }
