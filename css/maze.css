@@ -25,7 +25,6 @@ td {
 }
 td:hover{
 	filter: brightness(50%);
-<<<<<<< Updated upstream
 }
 #r1c1{
 	background-color: green;
@@ -41,6 +40,4 @@ td:hover{
 }
 #r5c5 {
 	background-color: teal;
-=======
->>>>>>> Stashed changes
 }
