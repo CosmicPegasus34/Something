@@ -82,4 +82,17 @@ function tempted(x){
 	currentID = x.id;
 	console.log(currentID);
 }
+<<<<<<< Updated upstream
 
+=======
+/*
+function barrier() {
+	for(var barrier)
+	{
+		if(i=0;i<1; i++)
+		{
+		
+		}
+	}
+}
+>>>>>>> Stashed changes
