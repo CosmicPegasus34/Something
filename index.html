@@ -9,45 +9,49 @@
         <h1>Maze Game</h1>
         <div>
             <label id="minutes">00</label>:<label id="seconds">00</label>
-            
-            <table>
-                <tr>
-                    <td id="r1c1" onmouseover="tempted(this)"></td>
-                    <td  name="barrier" id="r1c2" onmouseover="tempted(this)"></td>
-                    <td id="r1c3" onmouseover="tempted(this)"></td>
-                    <td id="r1c4" onmouseover="tempted(this)"></td>
-                    <td id="r1c5" onmouseover="tempted(this)"></td>
-                </tr>
-                <tr>
-                    <td id="r2c1" onmouseover="tempted(this)"></td>
-                    <td id="r2c2" onmouseover="tempted(this)"></td>
-                    <td id="r2c3" onmouseover="tempted(this)"></td>
-                    <td id="r2c4" onmouseover="tempted(this)"></td>
-                    <td id="r2c5" onmouseover="tempted(this)"></td>
-                </tr>
-                <tr>
-                    <td id="r3c1" onmouseover="tempted(this)"></td>
-                    <td id="r3c2" onmouseover="tempted(this)"></td>
-                    <td name="barrier" id="r3c3" onmouseover="tempted(this)"></td>
-                    <td id="r3c4" onmouseover="tempted(this)"></td>
-                    <td id="r3c5" onmouseover="tempted(this)"></td>
-                </tr>
-                <tr>
-                    <td id="r4c1" onmouseover="tempted(this)"></td>
-                    <td id="r4c2" onmouseover="tempted(this)"></td>
-                    <td id="r4c3" onmouseover="tempted(this)"></td>
-                    <td id="r4c4" onmouseover="tempted(this)"></td>
-                    <td  name="barrier" id="r4c5" onmouseover="tempted(this)"></td>
-                </tr>
-                <tr>
-                    <td id="r5c1" onmouseover="tempted(this)"></td>
-                    <td id="r5c2" onmouseover="tempted(this)"></td>
-                    <td id="r5c3" onmouseover="tempted(this)"></td>
-                    <td id="r5c4" onmouseover="tempted(this)"></td>
-                    <td id="r5c5" onmouseover="tempted(this)"></td>
-                </tr>
-            </table>
         </div>
+        <nav>
+            <a href="index.html">Level 1</a>
+            <a href="level2.html">Level 2</a>
+            <a href="level3.html">Level 3</a>
+        </nav>
+        <table>
+            <tr>
+                <td id="r1c1" onmouseover="tempted(this)"></td>
+                <td id="r1c2" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r1c3" onmouseover="tempted(this)"></td>
+                <td id="r1c4" onmouseover="tempted(this)"></td>
+                <td id="r1c5" onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r2c1" onmouseover="tempted(this)"></td>
+                <td id="r2c2" onmouseover="tempted(this)"></td>
+                <td id="r2c3" onmouseover="tempted(this)"></td>
+                <td id="r2c4" onmouseover="tempted(this)"></td>
+                <td id="r2c5" onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r3c1" onmouseover="tempted(this)"></td>
+                <td id="r3c2" onmouseover="tempted(this)"></td>
+                <td name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r3c4" onmouseover="tempted(this)"></td>
+                <td id="r3c5" onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r4c1" onmouseover="tempted(this)"></td>
+                <td id="r4c2" onmouseover="tempted(this)"></td>
+                <td id="r4c3" onmouseover="tempted(this)"></td>
+                <td id="r4c4" onmouseover="tempted(this)"></td>
+                <td  id="r4c5" name="barrier"  onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r5c1" onmouseover="tempted(this)"></td>
+                <td id="r5c2" onmouseover="tempted(this)"></td>
+                <td id="r5c3" onmouseover="tempted(this)"></td>
+                <td id="r5c4" id="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r5c5" class="finish" onmouseover="tempted(this)"></td>
+            </tr>
+        </table>
         <script src="js/maze.js"></script>
     </body>
 </html>

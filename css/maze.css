@@ -29,15 +29,10 @@ td:hover{
 #r1c1{
 	background-color: green;
 }
-#r1c2{
+.barrier_block{
 	background-color: red;
 }
-#r3c3{
-	background-color: red;
-}
-#r5c4{
-	background-color: red;
-}
-#r5c5 {
+
+.finish {
 	background-color: teal;
 }

@@ -1,5 +1,4 @@
-var blocks = ["r1c2","r3c3","r5c4"];
-var level2_blocks = ["r1c2", "r1c7", "r2c5", "r2c9", "r3c7","r4c1", "r4c10", "r5c7", "r6c5", "r6c9", "r7c9", "r8c3", "r8c7", "r9c5", "r9c9", "r10c7"];
+var blocks = ["r1c2", "r1c7", "r2c5", "r2c9", "r3c7","r4c1", "r4c10", "r5c7", "r6c5", "r6c9", "r7c9", "r8c3", "r8c7", "r9c5", "r9c9", "r10c7"];
 var currentPosX, currentPosY,currentID;
 currentPosX = 1; currentPosY = 1;
 function moves()
