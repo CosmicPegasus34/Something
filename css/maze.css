@@ -2,16 +2,16 @@
     font-family: 'arcade';
     src: url("../Fonts/zig_____.ttf");
 }
-html {
+html{
 	background-color: silver;
 	height: 90%
 }
-h1 {
+h1{
     text-align: center;
     font-size: 250%;
     font-family: 'arcade';
 }
-table {
+table{
     margin-left: 22em;
     width: 800px;
     height: 650px;
