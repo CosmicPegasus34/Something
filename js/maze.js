@@ -1,15 +1,9 @@
-var spaces = [
-	[1, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0]
-]
+var blocks = ["r1c2","r3c3","r5c4"];
 var currentPosX, currentPosY,currentID;
-currentPosX =1; currentPosY=1;
+currentPosX = 1; currentPosY = 1;
 function moves()
 {
-	for(var count=0;count<=5;count++)
+	for(var count=1;count<=5;count++)
 	{
 		for(var counted=0;counted <=5;counted++)
 		{
@@ -29,50 +23,62 @@ function down(event){
 		//spaces[currentPosX][currentPosY] = 0;
 		
 		currentPosX +=1;
+		var checks = "r"+currentPosX+"c"+currentPosY;
+		for(var count = 0;count<=blocks.length;count++){
+			if(blocks[count]== checks)
+			{
+				currentPosX -=1;
+			}
+		}
 		//spaces[currentPosX][currentPosY] = 1;
-		moves()
+		moves();
 		
 	}
 }
 function up(event){
 	var pressed = event.key;
-	var markers = "r"+currentPosX+"c"+currentPosY;
+	var tempX = currentPosX -1;
+	var markers = "r"+tempX+"c"+currentPosY;
 	var checked = document.getElementById(markers).style.backgroundColor;
 	if(pressed == "w"){
-		if(checked == "red")
-		{
+		currentPosX -=1;
+		var checks = "r"+currentPosX+"c"+currentPosY;
+		for(var count = 0;count<=blocks.length;count++){
+			if(blocks[count]== checks)
+			{
+				currentPosX +=1;
+			}
+		}
+		moves();
+		
 			
-		}
-		else{
-			currentPosX-=1;
-			moves()
-		}
-		
-		
-		
-					
 	}
 }
 function left(event){
 	var pressed = event.key;
-	if(pressed == "a" || ""){
-		//spaces[currentPosX][currentPosY] = 0;
+	if(pressed == "a"){
 		currentPosY -=1;
-		//spaces[currentPosX][currentPosY] = 1;
-		moves()
-		for(var x=0; x<5; x++){
-			for(var y=0;y<5;y++){
-				console.log(spaces[currentPosX][currentPosY]);
+		var checks = "r"+currentPosX+"c"+currentPosY;
+		for(var count = 0;count<=blocks.length;count++){
+			if(blocks[count]== checks)
+			{
+				currentPosY +=1;
 			}
 		}
+		moves()
 	}
 }
 function right(event){
 	var pressed = event.key;
 	if(pressed == "d"){
-		//spaces[currentPosX][currentPosY] = 0;
 		currentPosY +=1;
-		//spaces[currentPosX][currentPosY] = 1;
+		var checks = "r"+currentPosX+"c"+currentPosY;
+		for(var count = 0;count<=blocks.length;count++){
+			if(blocks[count]== checks)
+			{
+				currentPosY -=1;
+			}
+		}
 		moves()
 		
 	}
@@ -82,17 +88,24 @@ function tempted(x){
 	currentID = x.id;
 	console.log(currentID);
 }
-<<<<<<< Updated upstream
 
-=======
-/*
-function barrier() {
-	for(var barrier)
-	{
-		if(i=0;i<1; i++)
-		{
-		
-		}
+var minutesLabel = document.getElementById("mintes");
+var secondsLabel = document.getElementById("seconds");
+var totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime()
+{
+	totalSeconds++;
+	secondsLabel.innerHTML = pad(totalSeconds % 60);
+	minutes.Label.innerHTML = pad(parseInt(totalSeconds / 60));
+}
+function pad(val) {
+	var valString = val + "";
+	if(valString.length < 2){
+		return "0" + valString;
+	}
+	else {
+		return valString;
 	}
 }
->>>>>>> Stashed changes
