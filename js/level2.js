@@ -89,8 +89,17 @@ function tempted(x){
 	console.log(currentID);
 }
 
-var minutesLabel = document.getElementById("mintes");
+var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
+secondsLabel.style.fontFamily="arcade";
+secondsLabel.style.fontSize="200%";
+secondsLabel.style.position="absolute";
+secondsLabel.style.left="24em";
+//
+minutesLabel.style.fontFamily="arcade";
+minutesLabel.style.fontSize="200%";
+minutesLabel.style.position="absolute";
+minutesLabel.style.left="22em";
 var totalSeconds = 0;
 setInterval(setTime, 1000);
 
