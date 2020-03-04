@@ -25,8 +25,6 @@ function moves()
 function down(event){
 	var pressed = event.key;
 	if(pressed == "s"){
-		//spaces[currentPosX][currentPosY] = 0;
-		
 		currentPosX +=1;
 		var checks = "r"+currentPosX+"c"+currentPosY;
 		for(var count = 0;count<=blocks.length;count++){
@@ -35,9 +33,7 @@ function down(event){
 				currentPosX -=1;
 			}
 		}
-		//spaces[currentPosX][currentPosY] = 1;
 		moves();
-		
 	}
 }
 function up(event){
@@ -91,8 +87,19 @@ function tempted(x){
 	console.log(currentID);
 }
 
-var minutesLabel = document.getElementById("mintes");
+var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
+
+secondsLabel.style.fontFamily="arcade";
+secondsLabel.style.fontSize="200%";
+secondsLabel.style.position="absolute";
+secondsLabel.style.left="24em";
+//
+minutesLabel.style.fontFamily="arcade";
+minutesLabel.style.fontSize="200%";
+minutesLabel.style.position="absolute";
+minutesLabel.style.left="22em";
+
 var totalSeconds = 0;
 setInterval(setTime, 1000);
 
@@ -102,12 +109,12 @@ function setTime()
 	secondsLabel.innerHTML = pad(totalSeconds % 60);
 	minutes.Label = pad(parseInt(totalSeconds / 60));
 }
-function pad(val) {
-	var valString = val + "";
-	if(valString.length < 2){
-		return "0" + valString;
-	}
-	else {
-		return valString;
-	}
+ function pad(val) {
+ 	var valString = val + "";
+ 	if(valString.length < 2){
+ 		return "0" + valString;
+ 	}
+ 	else {
+ 		return valString;
+ 	}
 }
