@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--
+            Authors: Kade Z., and Caleb Sonnichsen
+            Date: 2/24/2020
+        -->
         <meta charset="utf-8">
         <title>Maze Game</title>
         <link rel="stylesheet" type="text/css" href="css/maze.css">
@@ -20,16 +24,16 @@
         <table>
             <tr>
                 <td id="r1c1" onmouseover="tempted(this)"></td>
-                <td id="r1c2" name="barrier" onmouseover="tempted(this)"></td>
+                <td id="r1c2" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r1c3" onmouseover="tempted(this)"></td>
-                <td id="r1c4" onmouseover="tempted(this)"></td>
+                <td id="r1c4" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r1c5" onmouseover="tempted(this)"></td>
                 <td id="r1c6" onmouseover="tempted(this)"></td>
                 <td id="r1c7" onmouseover="tempted(this)"></td>
                 <td id="r1c8" onmouseover="tempted(this)"></td>
                 <td id="r1c9" onmouseover="tempted(this)"></td>
                 <td id="r1c10" onmouseover="tempted(this)"></td>
-                <td id="r1c11" onmouseover="tempted(this)"></td>
+                <td id="r1c11" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r1c12" onmouseover="tempted(this)"></td>
                 <td id="r1c13" onmouseover="tempted(this)"></td>
                 <td id="r1c14" onmouseover="tempted(this)"></td>
@@ -42,26 +46,26 @@
                 <td id="r2c4" onmouseover="tempted(this)"></td>
                 <td id="r2c5" onmouseover="tempted(this)"></td>
                 <td id="r2c6" onmouseover="tempted(this)"></td>
-                <td id="r2c7" onmouseover="tempted(this)"></td>
+                <td id="r2c7" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r2c8" onmouseover="tempted(this)"></td>
                 <td id="r2c9" onmouseover="tempted(this)"></td>
                 <td id="r2c10" onmouseover="tempted(this)"></td>
                 <td id="r2c11" onmouseover="tempted(this)"></td>
                 <td id="r2c12" onmouseover="tempted(this)"></td>
                 <td id="r2c13" onmouseover="tempted(this)"></td>
-                <td id="r2c14" onmouseover="tempted(this)"></td>
+                <td id="r2c14" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r2c15" onmouseover="tempted(this)"></td>
             </tr>
             <tr>
                 <td id="r3c1" onmouseover="tempted(this)"></td>
                 <td id="r3c2" onmouseover="tempted(this)"></td>
-                <td id="r3c3" onmouseover="tempted(this)"></td>
+                <td id="r3c3" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r3c4" onmouseover="tempted(this)"></td>
                 <td id="r3c5" onmouseover="tempted(this)"></td>
                 <td id="r3c6" onmouseover="tempted(this)"></td>
                 <td id="r3c7" onmouseover="tempted(this)"></td>
                 <td id="r3c8" onmouseover="tempted(this)"></td>
-                <td id="r3c9" onmouseover="tempted(this)"></td>
+                <td id="r3c9" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r3c10" onmouseover="tempted(this)"></td>
                 <td id="r3c11" onmouseover="tempted(this)"></td>
                 <td id="r3c12" onmouseover="tempted(this)"></td>
@@ -74,26 +78,26 @@
                 <td id="r4c2" onmouseover="tempted(this)"></td>
                 <td id="r4c3" onmouseover="tempted(this)"></td>
                 <td id="r4c4" onmouseover="tempted(this)"></td>
-                <td id="r4c5" name="barrier" onmouseover="tempted(this)"></td>
-                <td id="r4c6" onmouseover="tempted(this)"></td>
+                <td id="r4c5" onmouseover="tempted(this)"></td>
+                <td id="r4c6" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r4c7" onmouseover="tempted(this)"></td>
                 <td id="r4c8" onmouseover="tempted(this)"></td>
                 <td id="r4c9" onmouseover="tempted(this)"></td>
                 <td id="r4c10" onmouseover="tempted(this)"></td>
-                <td id="r4c11" onmouseover="tempted(this)"></td>
+                <td id="r4c11" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r4c12" onmouseover="tempted(this)"></td>
                 <td id="r4c13" onmouseover="tempted(this)"></td>
-                <td id="r4c14" onmouseover="tempted(this)"></td>
+                <td id="r4c14" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r4c15" onmouseover="tempted(this)"></td>
             </tr>
             <tr>
-                <td id="r5c1" onmouseover="tempted(this)"></td>
+                <td id="r5c1" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r5c2" onmouseover="tempted(this)"></td>
                 <td id="r5c3" onmouseover="tempted(this)"></td>
-                <td id="r5c4" onmouseover="tempted(this)"></td>
+                <td id="r5c4" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r5c5" onmouseover="tempted(this)"></td>
                 <td id="r5c6" onmouseover="tempted(this)"></td>
-                <td id="r5c7" onmouseover="tempted(this)"></td>
+                <td id="r5c7" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r5c8" onmouseover="tempted(this)"></td>
                 <td id="r5c9" onmouseover="tempted(this)"></td>
                 <td id="r5c10" onmouseover="tempted(this)"></td>
@@ -101,7 +105,7 @@
                 <td id="r5c12" onmouseover="tempted(this)"></td>
                 <td id="r5c13" onmouseover="tempted(this)"></td>
                 <td id="r5c14" onmouseover="tempted(this)"></td>
-                <td id="r5c15" onmouseover="tempted(this)"></td>
+                <td id="r5c15" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
             </tr>
             <tr>
                 <td id="r6c1" onmouseover="tempted(this)"></td>
@@ -112,10 +116,10 @@
                 <td id="r6c6" onmouseover="tempted(this)"></td>
                 <td id="r6c7" onmouseover="tempted(this)"></td>
                 <td id="r6c8" onmouseover="tempted(this)"></td>
-                <td id="r6c9" onmouseover="tempted(this)"></td>
+                <td id="r6c9" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r6c10" onmouseover="tempted(this)"></td>
                 <td id="r6c11" onmouseover="tempted(this)"></td>
-                <td id="r6c12" onmouseover="tempted(this)"></td>
+                <td id="r6c12" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r6c13" onmouseover="tempted(this)"></td>
                 <td id="r6c14" onmouseover="tempted(this)"></td>
                 <td id="r6c15" onmouseover="tempted(this)"></td>
@@ -127,10 +131,10 @@
                 <td id="r7c4" onmouseover="tempted(this)"></td>
                 <td id="r7c5" onmouseover="tempted(this)"></td>
                 <td id="r7c6" onmouseover="tempted(this)"></td>
-                <td id="r7c7" onmouseover="tempted(this)"></td>
+                <td id="r7c7" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r7c8" onmouseover="tempted(this)"></td>
                 <td id="r7c9" onmouseover="tempted(this)"></td>
-                <td id="r7c10" class="finish" onmouseover="tempted(this)"></td>
+                <td id="r7c10" onmouseover="tempted(this)"></td>
                 <td id="r7c11" onmouseover="tempted(this)"></td>
                 <td id="r7c12" onmouseover="tempted(this)"></td>
                 <td id="r7c13" onmouseover="tempted(this)"></td>
@@ -142,7 +146,7 @@
                 <td id="r8c1" onmouseover="tempted(this)"></td>
                 <td id="r8c2" onmouseover="tempted(this)"></td>
                 <td id="r8c3" onmouseover="tempted(this)"></td>
-                <td id="r8c4" onmouseover="tempted(this)"></td>
+                <td id="r8c4" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r8c5" onmouseover="tempted(this)"></td>
                 <td id="r8c6" onmouseover="tempted(this)"></td>
                 <td id="r8c7" onmouseover="tempted(this)"></td>
@@ -157,18 +161,18 @@
             </tr>
             <tr>
                 <td id="r9c1" onmouseover="tempted(this)"></td>
-                <td id="r9c2" onmouseover="tempted(this)"></td>
+                <td id="r9c2" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r9c3" onmouseover="tempted(this)"></td>
                 <td id="r9c4" onmouseover="tempted(this)"></td>
                 <td id="r9c5" onmouseover="tempted(this)"></td>
                 <td id="r9c6" onmouseover="tempted(this)"></td>
                 <td id="r9c7" onmouseover="tempted(this)"></td>
-                <td id="r9c8" onmouseover="tempted(this)"></td>
+                <td id="r9c8" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r9c9" onmouseover="tempted(this)"></td>
                 <td id="r9c10" onmouseover="tempted(this)"></td>
                 <td id="r9c11" onmouseover="tempted(this)"></td>
                 <td id="r9c12" onmouseover="tempted(this)"></td>
-                <td id="r9c13" onmouseover="tempted(this)"></td>
+                <td id="r9c13" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
                 <td id="r9c14" onmouseover="tempted(this)"></td>
                 <td id="r9c15" onmouseover="tempted(this)"></td>
             </tr>
@@ -189,7 +193,92 @@
                 <td id="r10c14" onmouseover="tempted(this)"></td>
                 <td id="r10c15" onmouseover="tempted(this)"></td>
             </tr>
+            <tr>
+                <td id="r11c1" onmouseover="tempted(this)"></td>
+                <td id="r11c2" onmouseover="tempted(this)"></td>
+                <td id="r11c3" onmouseover="tempted(this)"></td>
+                <td id="r11c4" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r11c5" onmouseover="tempted(this)"></td>
+                <td id="r11c6" onmouseover="tempted(this)"></td>
+                <td id="r11c7" onmouseover="tempted(this)"></td>
+                <td id="r11c8" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r11c9" onmouseover="tempted(this)"></td>
+                <td id="r11c10" name="barrier" onmouseover="tempted(this)"></td>
+                <td id="r11c11" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r11c12" onmouseover="tempted(this)"></td>
+                <td id="r11c13" onmouseover="tempted(this)"></td>
+                <td id="r11c14" onmouseover="tempted(this)"></td>
+                <td id="r11c15" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r12c1" onmouseover="tempted(this)"></td>
+                <td id="r12c2" onmouseover="tempted(this)"></td>
+                <td id="r12c3" onmouseover="tempted(this)"></td>
+                <td id="r12c4" onmouseover="tempted(this)"></td>
+                <td id="r12c5" onmouseover="tempted(this)"></td>
+                <td id="r12c6" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r12c7" onmouseover="tempted(this)"></td>
+                <td id="r12c8" onmouseover="tempted(this)"></td>
+                <td id="r12c9" onmouseover="tempted(this)"></td>
+                <td id="r12c10" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r12c11" onmouseover="tempted(this)"></td>
+                <td id="r12c12" onmouseover="tempted(this)"></td>
+                <td id="r12c13" onmouseover="tempted(this)"></td>
+                <td id="r12c14" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r12c15" onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r13c1" onmouseover="tempted(this)"></td>
+                <td id="r13c2" onmouseover="tempted(this)"></td>
+                <td id="r13c3" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r13c4" onmouseover="tempted(this)"></td>
+                <td id="r13c5" onmouseover="tempted(this)"></td>
+                <td id="r13c6" onmouseover="tempted(this)"></td>
+                <td id="r13c7" onmouseover="tempted(this)"></td>
+                <td id="r13c8" onmouseover="tempted(this)"></td>
+                <td id="r13c9" onmouseover="tempted(this)"></td>
+                <td id="r13c10" onmouseover="tempted(this)"></td>
+                <td id="r13c11" onmouseover="tempted(this)"></td>
+                <td id="r13c12" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r13c13" onmouseover="tempted(this)"></td>
+                <td id="r13c14" onmouseover="tempted(this)"></td>
+                <td id="r13c15" onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r14c1" onmouseover="tempted(this)"></td>
+                <td id="r14c2" onmouseover="tempted(this)"></td>
+                <td id="r14c3" onmouseover="tempted(this)"></td>
+                <td id="r14c4" onmouseover="tempted(this)"></td>
+                <td id="r14c5" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r14c6" onmouseover="tempted(this)"></td>
+                <td id="r14c7" onmouseover="tempted(this)"></td>
+                <td id="r14c8" onmouseover="tempted(this)"></td>
+                <td id="r14c9" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r14c10" onmouseover="tempted(this)"></td>
+                <td id="r14c11" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r14c12" onmouseover="tempted(this)"></td>
+                <td id="r14c13" onmouseover="tempted(this)"></td>
+                <td id="r14c14" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r14c15" onmouseover="tempted(this)"></td>
+            </tr>
+            <tr>
+                <td id="r15c1" onmouseover="tempted(this)"></td>
+                <td id="r15c2" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r15c3" onmouseover="tempted(this)"></td>
+                <td id="r15c4" onmouseover="tempted(this)"></td>
+                <td id="r15c5" onmouseover="tempted(this)"></td>
+                <td id="r15c6" onmouseover="tempted(this)"></td>
+                <td id="r15c7" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r15c8" onmouseover="tempted(this)"></td>
+                <td id="r15c9" onmouseover="tempted(this)"></td>
+                <td id="r15c10" onmouseover="tempted(this)"></td>
+                <td id="r15c11" onmouseover="tempted(this)"></td>
+                <td id="r15c12" name="barrier" class="barrier_block" onmouseover="tempted(this)"></td>
+                <td id="r15c13" onmouseover="tempted(this)"></td>
+                <td id="r15c14" onmouseover="tempted(this)"></td>
+                <td id="r15c15" class="finish" onmouseover="tempted(this)"></td>
+            </tr>
         </table>
-        <script src="js/level2.js"></script>
+        <script src="js/level3.js"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-var blocks = ["", "", "", "", "","", "", "", "", "", "", "", "", "", "", ""];
+var blocks = ["r1c2", "r1c4", "r1c11", "r2c7", "r2c14","r3c3", "r3c9", "r4c6", "r4c11", "r4c14", "r5c1", "r5c4", "r5c7", "r5c15", "r6c9", "r6c12", "r7c7", "r8c4", "r9c2", "r9c8", "r9c13", "r11c4", "r11c8", "r11c12", "r11c15", "r12c6", "r12c10", "r12c14", "r13c3", "r13c12", "r14c5", "r14c9", "r14c11", "r14c14", "r15c2", "r15c7", "r15c12"];
 var currentPosX, currentPosY,currentID;
 currentPosX = 1; currentPosY = 1;
 function moves()
@@ -11,7 +11,7 @@ function moves()
 			var maker = "r"+currentPosX+"c"+currentPosY;
 			console.log(maker);
 			
-			document.getElementById(maker).style.backgroundColor="green";
+			document.getElementById(maker).style.backgroundColor="greeb";
 
 		}
 	}
