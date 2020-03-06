@@ -9,19 +9,23 @@
             Authors: Kade Z., and Caleb Sonnichsen
             Date: 2/24/2020
         -->
-    <body onkeydown="down(event),up(event),left(event),right(event)" onload="incrementCount()">
+    <body onkeydown="down(event),up(event),left(event),right(event)" onload="hide_image()">
         <h1>Maze Game</h1>
         <div>
-            <label id="minutes">00</label>:<label id="seconds">00</label>
+            <label id="minutes">00</label><label id="seconds">00</label>
         </div>
         <nav>
-            <a href="index.html"Level 1></a>
-            <a href="level2.html"Level 2></a>
-            <a href="level3.html"Level 3></a>
+            <a href="index.html">Level 1</a>
+            <a href="level2.html">Level 2</a>
+            <a href="level3.html">Level 3</a>
         </nav>
+        <br>
         <div>
-            <img src="images/2_heart.png" height="100px" width="250px">
+            <img id="health1" src="images/1_heart.png" height="100px" width="100px">
+            <img id="health0" src="images/0_hearts.png" height="100px" width="100px">
         </div>
+        <br>
+        <br>
         <table>
             <tr>
                 <td id="r1c1" onmouseover="tempted(this)"></td>
@@ -56,9 +60,9 @@
                 <td id="r5c2" onmouseover="tempted(this)"></td>
                 <td id="r5c3" onmouseover="tempted(this)"></td>
                 <td id="r5c4" id="barrier_block"  class="barrier_block" onmouseover="tempted(this)"></td>
-                <td id="r5c5" class="finish" onmouseover="tempted(this)"></td>
-            </tr>
+                <td id="r5c5" class="finish" onmouseover="tempted(this)" onclick="window.location.replace('level2.html')"></td>
+            </tr><script src="js/maze.js"></script>
         </table>
-        <script src="js/maze.js"></script>
+        
     </body>
 </html>

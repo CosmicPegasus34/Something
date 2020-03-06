@@ -9,10 +9,10 @@
             Authors: Kade Z., and Caleb Sonnichsen
             Date: 2/24/2020
         -->
-    <body onkeydown="down(event),up(event),left(event),right(event)">
+    <body onkeydown="down(event),up(event),left(event),right(event)" onload="hide_image()">
         <h1>Maze Game</h1>
         <div>
-            <label id="minutes">00</label>:<label id="seconds">00</label>
+            <label id="minutes">00</label><label id="seconds">00</label>
         </div>
         <div>
             <nav>
@@ -21,10 +21,13 @@
                 <a href="level3.html">Level 3</a>
             </nav>
         </div>
-        <div class="main_container" id="id_main_container">
-            <div class="container_inner" id="display_div_id"></div>
-            </div>
+        <br>
+        <div>
+            <img id="health1" src="images/1_heart.png" height="100px" width="100px">
+            <img id="health0" src="images/0_hearts.png" height="100px" width="100px">
         </div>
+        <br>
+        <br>
         <table>
             <tr>
                 <td id="r1c1" onmouseover="tempted(this)"></td>
@@ -108,7 +111,7 @@
                 <td id="r7c7" onmouseover="tempted(this)"></td>
                 <td id="r7c8" onmouseover="tempted(this)"></td>
                 <td id="r7c9" name="barrier" class="barrier_block"  onmouseover="tempted(this)"></td>
-                <td id="r7c10" class="finish" onmouseover="tempted(this)"></td>
+                <td id="r7c10" class="finish" onmouseover="tempted(this)" onclick="window.location.replace('level3.html')"></td>
             </tr>
             <tr>
                 <td id="r8c1" onmouseover="tempted(this)"></td>
